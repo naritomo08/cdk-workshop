@@ -1,15 +1,83 @@
-# Welcome to your CDK TypeScript project
+# CDK-workshop
 
-You should explore the contents of this project. It demonstrates a CDK app with an instance of a stack (`CdkWorkshopStack`)
-which contains an Amazon SQS queue that is subscribed to an Amazon SNS topic.
+AWS CDKでインフラ構築するためのソース
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+以下のページを事前に必要な必要条件にあるSWを入れてること。
 
-## Useful commands
+[AWS CDK Workshop](https://cdkworkshop.com/ja/)
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+## ソース入手
+
+以下のコマンドで入手する。
+
+```bash
+git clone
+cd cdk-workshop
+rm -rf .git
+```
+
+## Typescript
+
+以下のコマンドで実施可能。
+
+```bash
+cd Typescript
+
+新規プロジェクト作成(すでに作成している為必要ない。)
+cdk init sample-app --language typescript
+
+以下のファイルに各種作成したいソースコードを記載する
+lib/cdk-workshop-stack.ts
+
+CDK アプリケーションからテンプレートを合成
+(AWS CloudFormation テンプレート確認)
+cdk synth
+
+環境のブートストラップ(初回構築時)
+cdk bootstrap
+
+ソースデプロイ
+cdk deploy
+
+現在の環境とのソース差分確認
+cdk diff
+
+作成したリソースの削除(別途必要に応じbootstrapしたときのStack,S3を削除すること。)
+cdk destroy
+```
+
+## Python
+
+以下のコマンドで実施可能。
+
+```bash
+cd python
+
+新規プロジェクト作成(すでに作成している為必要ない。)
+cdk init sample-app --language python
+
+以下のファイルに各種作成したいソースコードを記載する
+python/python_stack.py
+
+CDK実行Python仮想環境実行
+source .venv/bin/activate
+
+必要なPythonモジュール導入(必要に応じ)
+pip install -r requirements.txt
+
+CDK アプリケーションからテンプレートを合成
+(AWS CloudFormation テンプレート確認,必要に応じ)
+cdk synth
+
+環境のブートストラップ(初回構築時)
+cdk bootstrap
+
+ソースデプロイ
+cdk deploy
+
+現在の環境とのソース差分確認
+cdk diff
+
+作成したリソースの削除(別途必要に応じbootstrapしたときのStack,S3を削除すること。)
+cdk destroy
+```
