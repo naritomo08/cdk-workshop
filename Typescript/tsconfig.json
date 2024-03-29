@@ -21,11 +21,11 @@
     "experimentalDecorators": true,
     "strictPropertyInitialization": false,
     "typeRoots": [
-      "Typescript/node_modules/@types"
+      "./node_modules/@types"
     ]
   },
   "exclude": [
-    "Typescript/node_modules",
+    "node_modules",
     "cdk.out"
   ]
 }

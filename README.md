@@ -27,7 +27,7 @@ cd Typescript
 cdk init sample-app --language typescript
 
 以下のファイルに各種作成したいソースコードを記載する
-lib/cdk-workshop-stack.ts
+lib/typescript-stack.ts
 
 CDK アプリケーションからテンプレートを合成
 (AWS CloudFormation テンプレート確認)
@@ -87,13 +87,13 @@ cdk destroy
 以下のコマンドで実施可能。
 
 ```bash
-cd NET
+cd Net
 
 新規プロジェクト作成(すでに作成している為必要ない。)
 cdk init sample-app --language csharp
 
 以下のファイルに各種作成したいソースコードを記載する
-src/CdkWorkshop/CdkWorkshopStack.cs
+src/Netshop/NetStack.cs
 
 CDK アプリケーションからテンプレートを合成
 (AWS CloudFormation テンプレート確認)
@@ -123,7 +123,7 @@ cd Java
 cdk init sample-app --language java
 
 以下のファイルに各種作成したいソースコードを記載する
-src/main/java/com/myorg/CdkWorkshopStack.java
+src/main/java/com/myorg/JavaStack.java
 
 CDK アプリケーションからテンプレートを合成
 (AWS CloudFormation テンプレート確認)
@@ -153,7 +153,7 @@ cd Go
 cdk init sample-app --language go
 
 以下のファイルに各種作成したいソースコードを記載する
-cdk-workshop.go
+go.go
 
 CDK アプリケーションからテンプレートを合成
 (AWS CloudFormation テンプレート確認)

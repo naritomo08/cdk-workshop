@@ -1,8 +1,8 @@
 {
-  "name": "cdk-workshop",
+  "name": "typescript",
   "version": "0.1.0",
   "bin": {
-    "cdk-workshop": "bin/cdk-workshop.js"
+    "typescript": "bin/typescript.js"
   },
   "scripts": {
     "build": "tsc",
