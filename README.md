@@ -93,7 +93,7 @@ cd Net
 cdk init sample-app --language csharp
 
 以下のファイルに各種作成したいソースコードを記載する
-src/Netshop/NetStack.cs
+src/Net/NetStack.cs
 
 CDK アプリケーションからテンプレートを合成
 (AWS CloudFormation テンプレート確認)
@@ -124,36 +124,6 @@ cdk init sample-app --language java
 
 以下のファイルに各種作成したいソースコードを記載する
 src/main/java/com/myorg/JavaStack.java
-
-CDK アプリケーションからテンプレートを合成
-(AWS CloudFormation テンプレート確認)
-cdk synth
-
-環境のブートストラップ(初回構築時)
-cdk bootstrap
-
-ソースデプロイ
-cdk deploy
-
-現在の環境とのソース差分確認
-cdk diff
-
-作成したリソースの削除(別途必要に応じbootstrapしたときのStack,S3を削除すること。)
-cdk destroy
-```
-
-## Go
-
-以下のコマンドで実施可能。
-
-```bash
-cd Go
-
-新規プロジェクト作成(すでに作成している為必要ない。)
-cdk init sample-app --language go
-
-以下のファイルに各種作成したいソースコードを記載する
-go.go
 
 CDK アプリケーションからテンプレートを合成
 (AWS CloudFormation テンプレート確認)
