@@ -82,6 +82,12 @@ cdk bootstrap
 ソースデプロイ
 cdk deploy
 
+ソースデプロイ(ホットスワップ、本番で使用しないこと。)
+cdk deploy --hotswap
+
+ソースを監視しながらの自動デプロイ実施
+cdk watch
+
 現在の環境とのソース差分確認
 cdk diff
 
