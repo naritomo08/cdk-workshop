@@ -37,4 +37,3 @@ class PythonStack(Stack):
             title='Hello Hits',
             table=hello_with_counter.table,
         )
-
