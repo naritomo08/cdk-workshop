@@ -10,8 +10,22 @@ AWS CDKでインフラ構築するためのソース(空プロジェクト)
 
 以下のコマンドで入手する。
 
+空のリソース
+
 ```bash
 git clone https://github.com/naritomo08/cdk-workshop.git
+cd cdk-workshop
+rm -rf .git
+```
+
+Lambda/APIGatewayリソース
+
+本ソースは以下の文句を返すAPIになります。
+
+Hello, CDK! You've hit /
+
+```bash
+git clone -b hello https://github.com/naritomo08/cdk-workshop.git
 cd cdk-workshop
 rm -rf .git
 ```
@@ -51,6 +65,11 @@ cdk diff
 
 作成したリソースの削除(別途必要に応じbootstrapしたときのStack,S3を削除すること。)
 cdk destroy
+
+動作確認(helloリソースブランチ)
+
+curl 表示URL
+"Hello, CDK! You've hit /"が返ってくること。
 ```
 
 ## Python
@@ -93,6 +112,11 @@ cdk diff
 
 作成したリソースの削除(別途必要に応じbootstrapしたときのStack,S3を削除すること。)
 cdk destroy
+
+動作確認(helloリソースブランチ)
+
+curl 表示URL
+"Hello, CDK! You've hit /"が返ってくること。
 ```
 
 ## .NET
@@ -123,6 +147,11 @@ cdk diff
 
 作成したリソースの削除(別途必要に応じbootstrapしたときのStack,S3を削除すること。)
 cdk destroy
+
+動作確認(helloリソースブランチ)
+
+curl 表示URL
+"Hello, CDK! You've hit /"が返ってくること。
 ```
 
 ## Java
@@ -171,6 +200,11 @@ cdk diff
 
 作成したリソースの削除(別途必要に応じbootstrapしたときのStack,S3を削除すること。)
 cdk destroy
+
+動作確認(helloリソースブランチ)
+
+curl 表示URL
+"Hello, CDK! You've hit /"が返ってくること。
 ```
 
 ## Go
@@ -210,4 +244,9 @@ cdk diff
 
 作成したリソースの削除(別途必要に応じbootstrapしたときのStack,S3を削除すること。)
 cdk destroy
+
+動作確認(helloリソースブランチ)
+
+curl 表示URL
+"Hello, CDK! You've hit /"が返ってくること。
 ```
